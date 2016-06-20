@@ -3,124 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>我是来无影</title>
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
-    </script>
-    <style type="text/css">
-        *{
-            margin: 0;
-            padding: 0;
+    <link href="css/main.css" type="text/css" rel="stylesheet">
 
-        }
-        div{
-            -moz-border-radius: 50px;      /* Gecko browsers */
-            -webkit-border-radius: 50px;   /* Webkit browsers */
-            border-radius:50px;            /* W3C syntax */
-        }
-
-
-        @media only screen and (max-width: 640px) {
-            .divcenter{
-                display: none;
-
-            }
-        }
-        @media only screen and (min-width: 641px) {
-            .divcenter{
-                width: 200px;
-                height: 200px;
-                background-image: url(img/logo_middle.jpg);
-                background-size: contain;
-
-
-            }
-        }
-
-
-
-
-        .divsection{
-            width: 45%;
-            height: 45%;
-            display: none;
-            cursor: pointer;
-
-        }
-        .center-in-center{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            font-family: Consolas;
-            font-size: 200%;
-
-
-
-        }
-        .leftup{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-100%, -100%);
-            -moz-transform: translate(-100%, -100%);
-            -ms-transform: translate(-100%, -100%);
-            -o-transform: translate(-100%, -100%);
-            transform: translate(-100%, -100%);
-            background-color: pink;
-        }
-
-        .leftbottom{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-100%, 0%);
-            -moz-transform: translate(-100%, 0%);
-            -ms-transform: translate(-100%, 0%);
-            -o-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-            background-color: yellowgreen;
-
-        }
-
-        .rightup{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(0%, -100%);
-            -moz-transform: translate(0%, -100%);
-            -ms-transform: translate(0%, -100%);
-            -o-transform: translate(0%, -100%);
-            transform: translate(0%, -100%);
-            background-color: blueviolet;
-        }
-
-        .rightbottom{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            background-color: coral;
-        }
-
-
-    </style>
+    <script src="vendor/jquery.js" type="text/javascript"></script>
 </head>
 <body>
 
 
-<div class="leftup divsection" onclick="window.open('http://liwenyu.me/blog','_blank');"><div class="center-in-center">BLOG</div></div>
+<div class="leftup divsection" onclick="window.open('http://wenyuli.com','_blank');"><div class="center-in-center">BLOG</div></div>
 <div class="leftbottom divsection" onclick="window.open('https://github.com/AllenInShell','_blank');"><div class="center-in-center">GITHUB</div></div>
 <div class="rightup divsection" onclick="window.open('http://liwenyu.me/cv','_blank');"><div class="center-in-center">CV</div></div>
-<div class="rightbottom divsection" onclick="window.open('http://wenyuli.com','_blank');"><div class="center-in-center">WAREHOUSE</div></div>
-<div class="center-in-center divcenter"></div>
+<div class="rightbottom divsection" onclick="window.open('http://liwenyu.me/blog','_blank');"><div class="center-in-center">WAREHOUSE</div></div>
+<div class="center-in-center divcenter logo"></div>
 
-<script>
-    $(function(){
-       $(".divsection").fadeIn(3000);
-    });
-</script>
+<script src="js/main.js" type="text/javascript"></script>
 
 </body>
 </html>
