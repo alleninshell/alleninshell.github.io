@@ -1,5 +1,6 @@
 $(function(){
     $(".divsection").fadeIn(3000);
+    $(".leftup").animate({right:'50%' },normal, swing);
 });
 
 /**

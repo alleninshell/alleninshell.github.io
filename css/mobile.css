@@ -1,0 +1,47 @@
+div {
+    -moz-border-radius: 50px; /* Gecko browsers */
+    -webkit-border-radius: 50px; /* Webkit browsers */
+    border-radius: 50px; /* W3C syntax */
+}
+.divcenter {
+    display: none;
+}
+
+.divsection {
+    width: 90%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.center-in-center {
+    line-height: 200px;
+    font-family: Consolas;
+
+    font-size: 200%;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.leftup {
+    background-color: pink;
+
+}
+
+.leftbottom {
+    background-color: yellowgreen;
+
+}
+
+.rightup {
+    background-color: blueviolet;
+}
+
+.rightbottom {
+    background-color: coral;
+}

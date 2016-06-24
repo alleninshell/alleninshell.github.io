@@ -1,97 +1,101 @@
-*{
-  margin: 0;
-  padding: 0;
-
-}
-div{
-  -moz-border-radius: 50px;      /* Gecko browsers */
-  -webkit-border-radius: 50px;   /* Webkit browsers */
-  border-radius:50px;            /* W3C syntax */
-}
-
-
-@media only screen and (max-width: 640px) {
-  .divcenter{
-    display: none;
-
-  }
-}
-@media only screen and (min-width: 641px) {
-  .divcenter{
-    width: 200px;
-    height: 200px;
-    background-image: url(../img/logo_middle.jpg);
-    background-size: contain;
-
-
-  }
-}
-
-
-
-
-.divsection{
-  width: 45%;
-  height: 45%;
-  display: none;
-  cursor: pointer;
-
-}
-.center-in-center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-family: Consolas;
-  font-size: 200%;
-
-
-
-}
-.leftup{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-100%, -100%);
-  -moz-transform: translate(-100%, -100%);
-  -ms-transform: translate(-100%, -100%);
-  -o-transform: translate(-100%, -100%);
-  transform: translate(-100%, -100%);
-  background-color: pink;
-}
-
-.leftbottom{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-100%, 0%);
-  -moz-transform: translate(-100%, 0%);
-  -ms-transform: translate(-100%, 0%);
-  -o-transform: translate(-100%, 0%);
-  transform: translate(-100%, 0%);
-  background-color: yellowgreen;
+* {
+    margin: 0;
+    padding: 0;
 
 }
 
-.rightup{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(0%, -100%);
-  -moz-transform: translate(0%, -100%);
-  -ms-transform: translate(0%, -100%);
-  -o-transform: translate(0%, -100%);
-  transform: translate(0%, -100%);
-  background-color: blueviolet;
+div,a{
+    -moz-border-radius: 50px; /* Gecko browsers */
+    -webkit-border-radius: 50px; /* Webkit browsers */
+    border-radius: 50px; /* W3C syntax */
 }
 
-.rightbottom{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: coral;
+
+    .divcenter {
+        width: 200px;
+        height: 200px;
+        background-image: url(../img/logo_middle.jpg);
+        background-size: contain;
+
+    }
+
+
+.divsection {
+    width: 45%;
+    height: 45%;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 1s;
+
+}
+
+.divcenter:hover {
+    opacity: 1;
+
+}
+
+.center-in-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Consolas;
+    font-size: 200%;
+
+}
+
+
+
+.leftup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-105%, -105%);
+    -moz-transform: translate(-105%, -105%);
+    -ms-transform: translate(-105%, -105%);
+    -o-transform: translate(-105%, -105%);
+    transform: translate(-105%, -105%);
+    background-color: pink;
+
+}
+
+.leftbottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-105%, 5%);
+    -moz-transform: translate(-105%, 5%);
+    -ms-transform: translate(-105%, 5%);
+    -o-transform: translate(-105%, 5%);
+    transform: translate(-105%, 5%);
+    background-color: yellowgreen;
+
+}
+
+.rightup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(5%, -105%);
+    -moz-transform: translate(5%, -105%);
+    -ms-transform: translate(5%, -105%);
+    -o-transform: translate(5%, -105%);
+    transform: translate(5%, -105%);
+    background-color: blueviolet;
+}
+
+.rightbottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(5%, 5%);
+    -moz-transform: translate(5%, 5%);
+    -ms-transform: translate(5%, 5%);
+    -o-transform: translate(5%, 5%);
+    transform: translate(5%, 5%);
+    background-color: coral;
 }
