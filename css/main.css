@@ -12,14 +12,16 @@ body{
     background-color: black;
 }
 #logo {
-    font-size: 10vw;
     position: absolute;
-    top:30%;
-
-    left: 40%;
+    left: 0;
     right: 0;
-    font-family: "方正黄草简体";
+    text-align: center;
+    top:30%;
+    color: white;
+    font-size: 10vw;
+    font-family: "Script MT Bold";
 }
+
 
 
 #link-panel {
@@ -38,8 +40,8 @@ body{
     display: inline-block;
 
     height: 45px;
-    -webkit-transition: 1s;
-    transition: 1s;
+    transition: 0.5s;
+
     font-family: Consolas;
 
 }
