@@ -1,47 +1,46 @@
-div {
-    -moz-border-radius: 50px; /* Gecko browsers */
-    -webkit-border-radius: 50px; /* Webkit browsers */
-    border-radius: 50px; /* W3C syntax */
-}
-.divcenter {
-    display: none;
+html {
+    height: 100%;
+    margin: 0;
 }
 
-.divsection {
-    width: 90%;
-    height: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-
-
+body {
+    height: 100%;
+    margin: 0;
 }
 
-.center-in-center {
-    line-height: 200px;
+body {
+    background-color: black;
+}
+
+#logo {
+    font-size: 30vw;
+    position: absolute;
+   top: 10%;
+
+    left: 30%;
+    right: 0;
+    font-family: "方正黄草简体";
+}
+
+#link-panel {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    left: 0;
+    right: 0;
+
+    font-size: 5rem;
+}
+
+#link-panel li {
+    display: block;
+    height: 20%;
     font-family: Consolas;
 
-    font-size: 200%;
-    vertical-align: middle;
-    text-align: center;
-
 }
 
-.leftup {
-    background-color: pink;
-
+#link-panel li a {
+    color: #fff;
+    text-decoration: none
 }
 
-.leftbottom {
-    background-color: yellowgreen;
-
-}
-
-.rightup {
-    background-color: blueviolet;
-}
-
-.rightbottom {
-    background-color: coral;
-}
